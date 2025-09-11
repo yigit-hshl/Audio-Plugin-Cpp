@@ -76,7 +76,8 @@
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/std:c++20 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <AdditionalIncludeDirectories>D:\Projects\Audio-Plugin-CPP\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\JuceLibraryCode;D:\Projects\Audio-Plugin-CPP\JUCE\modules;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -121,7 +122,8 @@
       <WarningLevel>Level4</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/std:c++20 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <AdditionalIncludeDirectories>D:\Projects\Audio-Plugin-CPP\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\JuceLibraryCode;D:\Projects\Audio-Plugin-CPP\JUCE\modules;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
