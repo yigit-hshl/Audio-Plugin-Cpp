@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio Version 16
+
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Audio-Plugin-CPP - Standalone Plugin", "Audio-Plugin-CPP_StandalonePlugin.vcxproj", "{E5058B93-26AA-D698-A2BE-78B3A97B115A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E02C3E32-165B-8494-B5AC-1FACA2390905} = {E02C3E32-165B-8494-B5AC-1FACA2390905}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Audio-Plugin-CPP - VST3", "Audio-Plugin-CPP_VST3.vcxproj", "{116B110A-2D13-2850-4D37-F5C82E2EED9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E02C3E32-165B-8494-B5AC-1FACA2390905} = {E02C3E32-165B-8494-B5AC-1FACA2390905}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Audio-Plugin-CPP - Shared Code", "Audio-Plugin-CPP_SharedCode.vcxproj", "{E02C3E32-165B-8494-B5AC-1FACA2390905}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{116B110A-2D13-2850-4D37-F5C82E2EED9F}.Debug|x64.ActiveCfg = Debug|x64
+		{116B110A-2D13-2850-4D37-F5C82E2EED9F}.Debug|x64.Build.0 = Debug|x64
+		{116B110A-2D13-2850-4D37-F5C82E2EED9F}.Release|x64.ActiveCfg = Release|x64
+		{116B110A-2D13-2850-4D37-F5C82E2EED9F}.Release|x64.Build.0 = Release|x64
+		{E5058B93-26AA-D698-A2BE-78B3A97B115A}.Debug|x64.ActiveCfg = Debug|x64
+		{E5058B93-26AA-D698-A2BE-78B3A97B115A}.Debug|x64.Build.0 = Debug|x64
+		{E5058B93-26AA-D698-A2BE-78B3A97B115A}.Release|x64.ActiveCfg = Release|x64
+		{E5058B93-26AA-D698-A2BE-78B3A97B115A}.Release|x64.Build.0 = Release|x64
+		{E02C3E32-165B-8494-B5AC-1FACA2390905}.Debug|x64.ActiveCfg = Debug|x64
+		{E02C3E32-165B-8494-B5AC-1FACA2390905}.Debug|x64.Build.0 = Debug|x64
+		{E02C3E32-165B-8494-B5AC-1FACA2390905}.Release|x64.ActiveCfg = Release|x64
+		{E02C3E32-165B-8494-B5AC-1FACA2390905}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
