@@ -10,7 +10,7 @@
 #include "PluginEditor.h"
 
 //==============================================================================
-AudioPluginCppAudioProcessorEditor::AudioPluginCppAudioProcessorEditor (AudioPluginCppAudioProcessor& p)
+AudioPluginCPPAudioProcessorEditor::AudioPluginCPPAudioProcessorEditor (AudioPluginCPPAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
     // Make sure that before the constructor has finished, you've set the
@@ -18,12 +18,12 @@ AudioPluginCppAudioProcessorEditor::AudioPluginCppAudioProcessorEditor (AudioPlu
     setSize (400, 300);
 }
 
-AudioPluginCppAudioProcessorEditor::~AudioPluginCppAudioProcessorEditor()
+AudioPluginCPPAudioProcessorEditor::~AudioPluginCPPAudioProcessorEditor()
 {
 }
 
 //==============================================================================
-void AudioPluginCppAudioProcessorEditor::paint (juce::Graphics& g)
+void AudioPluginCPPAudioProcessorEditor::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
     g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
@@ -33,7 +33,7 @@ void AudioPluginCppAudioProcessorEditor::paint (juce::Graphics& g)
     g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
 }
 
-void AudioPluginCppAudioProcessorEditor::resized()
+void AudioPluginCPPAudioProcessorEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..

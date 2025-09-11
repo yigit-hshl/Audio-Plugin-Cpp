@@ -13,15 +13,15 @@
 //==============================================================================
 /**
 */
-class AudioPluginCppAudioProcessor  : public juce::AudioProcessor
+class AudioPluginCPPAudioProcessor  : public juce::AudioProcessor
                             #if JucePlugin_Enable_ARA
                              , public juce::AudioProcessorARAExtension
                             #endif
 {
 public:
     //==============================================================================
-    AudioPluginCppAudioProcessor();
-    ~AudioPluginCppAudioProcessor() override;
+    AudioPluginCPPAudioProcessor();
+    ~AudioPluginCPPAudioProcessor() override;
 
     //==============================================================================
     void prepareToPlay (double sampleRate, int samplesPerBlock) override;
@@ -58,5 +58,5 @@ public:
 
 private:
     //==============================================================================
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AudioPluginCppAudioProcessor)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (AudioPluginCPPAudioProcessor)
 };
