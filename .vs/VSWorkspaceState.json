@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Audio-Plugin-CPP",
+    "\\Audio-Plugin-CPP\\Source",
+    "\\JUCE",
+    "\\JUCE\\modules",
+    "\\JUCE\\modules\\juce_dsp",
+    "\\JUCE\\modules\\juce_dsp\\processors"
   ],
-  "SelectedNode": "\\Audio-Plugin-CPP.sln",
+  "SelectedNode": "\\Audio-Plugin-CPP\\Source\\PluginProcessor.cpp",
   "PreviewInSolutionExplorer": true
 }

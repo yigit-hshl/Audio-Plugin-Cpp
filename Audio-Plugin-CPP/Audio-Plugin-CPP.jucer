@@ -5,6 +5,9 @@
               cppLanguageStandard="20">
   <MAINGROUP id="V10yFD" name="Audio-Plugin-CPP">
     <GROUP id="{8AC227BB-CC72-2115-7087-773687AF3D0D}" name="Source">
+      <GROUP id="{431D1220-0FF6-BE87-E5EB-33B5F1649393}" name="DSP">
+        <FILE id="DXGERM" name="Fifo.h" compile="0" resource="0" file="../SimpleMultiBandComp/Source/DSP/Fifo.h"/>
+      </GROUP>
       <FILE id="kZlxXP" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="WXCYa8" name="PluginProcessor.h" compile="0" resource="0"
@@ -18,8 +21,10 @@
   <EXPORTFORMATS>
     <VS2019 targetFolder="Builds/VisualStudio2019">
       <CONFIGURATIONS>
-        <CONFIGURATION isDebug="1" name="Debug" targetName="Audio-Plugin-CPP" extraCompilerFlags="/std:c++20"/>
-        <CONFIGURATION isDebug="0" name="Release" targetName="Audio-Plugin-CPP" extraCompilerFlags="/std:c++20"/>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Audio-Plugin-CPP" extraCompilerFlags="/std:c++20"
+                       headerPath="D:\Projects\Audio-Plugin-CPP\SimpleMultiBandComp\Source\DSP&#10;D:\Projects\Audio-Plugin-CPP\SimpleMultiBandComp\Source\GUI&#10;D:\Projects\Audio-Plugin-CPP\SimpleMultiBandComp\Source\"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Audio-Plugin-CPP" extraCompilerFlags="/std:c++20"
+                       headerPath="D:\Projects\Audio-Plugin-CPP\SimpleMultiBandComp\Source\DSP&#10;D:\Projects\Audio-Plugin-CPP\SimpleMultiBandComp\Source\GUI&#10;D:\Projects\Audio-Plugin-CPP\SimpleMultiBandComp\Source\"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
         <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
