@@ -144,6 +144,22 @@ void AudioPluginCPPAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
 
+    //TODO: add APVTS
+    //TODO: create audio parameters for all dsp choices
+    //TODO: update DSP here from audio parameters
+    //TODO: save/load settings
+    //TODO: save/load DSP order
+    //TODO: Drag-To-Reorder GUI
+    //TODO: GUI design for each DSP instance
+    //TODO: metering
+    //TODO: prepare all DSP
+    //TODO: wet/dry knob
+    //TODO: mono & stereo versions
+    //TODO: modulators
+    //TODO: thread-safe filter
+    //TODO: pre/post filtering
+    //TODO: delay module
+
     auto newDSPOrder = DSP_Order();
 
     // Try to pull
