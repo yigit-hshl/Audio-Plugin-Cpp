@@ -64,6 +64,9 @@ public:
         LadderFilter,
         END_OF_LIST
     };
+    
+    static juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
+    juce::AudioProcessorValueTreeState apvts{ *this, nullptr, "Settings", createParameterLayout() };
 
     using DSP_Order = std::array<DSP_Option, static_cast<site_t>(DSP_Option::END_OF_LIST)>;
     SimpleMBComp::Fifo<DSP_Order> dspOrderFifo;
