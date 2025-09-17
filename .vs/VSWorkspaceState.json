@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Audio-Plugin-CPP",
+    "\\Audio-Plugin-CPP\\Source"
   ],
-  "SelectedNode": "\\BinaryBuilder.sln",
+  "SelectedNode": "\\Audio-Plugin-CPP\\Source\\PluginProcessor.h",
   "PreviewInSolutionExplorer": true
 }

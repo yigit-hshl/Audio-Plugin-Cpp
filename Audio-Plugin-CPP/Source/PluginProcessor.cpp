@@ -15,6 +15,12 @@ auto getPhaserDepthName() { return juce::String("Phaser Depth %"); }
 auto getPhaserFeedbackName() { return juce::String("Phaser Feedback %"); }
 auto getPhaserMixName() { return juce::String("Phaser Mix %"); }
 
+auto getChorusRateName() { return juce::String("Chorus RateHz"); }
+auto getChorusDepthName() { return juce::String("Chorus Depth %"); }
+auto getChorusFeedbackName() { return juce::String("Chorus Feedback %"); }
+auto getChorusMixName() { return juce::String("Chorus Mix %"); }
+auto getChorusCenterDelayName() { return juce::String("Chorus Center Delay ms"); }
+
 //==============================================================================
 AudioPluginCPPAudioProcessor::AudioPluginCPPAudioProcessor()
 #ifndef JucePlugin_PreferredChannelConfigurations
@@ -175,6 +181,14 @@ juce::AudioProcessorValueTreeState::ParameterLayout AudioPluginCPPAudioProcessor
     );
     */
 
+    /*
+    Phaser:
+        Rate: Hz
+        Depth: 0 to 1
+        Center freq.: Hz
+        Feedback: -1 to 1
+        Mix: 0 to 1
+    */
     const int versionHint = 1;
     auto name = getPhaserRateName();
     layout.add(std::make_unique<juce::AudioParameterFloat>(
@@ -205,6 +219,15 @@ juce::AudioProcessorValueTreeState::ParameterLayout AudioPluginCPPAudioProcessor
         juce::ParameterID{ name, versionHint },
         name,
         juce::NormalisableRange<float>(0.01f, 1.f, 0.01f, 1.f), 0.05f, "%"));
+
+    /*
+    Chorus:
+        Rate: Hz
+        Depth: 0 to 1
+        Center delay: ms (1 to 100)
+        Feedback: -1 to 1
+        Mix: 0 to 1
+    */
 
     return layout;
 }
