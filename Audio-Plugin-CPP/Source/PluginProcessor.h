@@ -102,6 +102,12 @@ public:
     // Drive: 1-100
     juce::AudioParameterFloat* overdriveSaturation = nullptr;
 
+    // Ladder Filter
+    juce::AudioParameterChoice* ladderFilterMode = nullptr;
+    juce::AudioParameterFloat* ladderFilterCutoffHz = nullptr;
+    juce::AudioParameterFloat* ladderFilterResonance = nullptr;
+    juce::AudioParameterFloat* ladderFilterDrive = nullptr;
+
 private:
     DSP_Order dspOrder;
 
