@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Audio-Plugin-CPP",
+    "\\Audio-Plugin-CPP\\Builds",
+    "\\Audio-Plugin-CPP\\Builds\\VisualStudio2019",
+    "\\Audio-Plugin-CPP\\Builds\\VisualStudio2019\\.vs",
+    "\\Audio-Plugin-CPP\\Builds\\VisualStudio2019\\x64",
     "\\Audio-Plugin-CPP\\Source"
   ],
-  "SelectedNode": "\\Audio-Plugin-CPP\\Source\\PluginProcessor.h",
+  "SelectedNode": "\\Audio-Plugin-CPP\\Builds\\VisualStudio2019\\Audio-Plugin-CPP.sln",
   "PreviewInSolutionExplorer": true
 }
